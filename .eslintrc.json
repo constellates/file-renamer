@@ -1,0 +1,28 @@
+{
+  "extends": ["airbnb", "plugin:react/recommended", "plugin:jsx-a11y/recommended"],
+  "plugins": ["import"],
+  "rules": {
+    "object-curly-newline": "off",
+    "react/jsx-filename-extension": "off",
+    "react/require-default-props": "off",
+    "consistent-return": "off",
+    "no-plusplus": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "space-infix-ops": "off",
+    "jsx-quotes": [2, "prefer-single"],
+    "import/prefer-default-export": "off",
+    "no-await-in-loop": "off",
+    "no-restricted-syntax": "off"
+  },
+  "settings": {
+    "import/core-modules": [
+      "electron"
+    ]
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "MAIN_WINDOW_WEBPACK_ENTRY": true,
+    "MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY": true
+  }
+}
